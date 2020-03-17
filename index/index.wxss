@@ -1,0 +1,28 @@
+
+.column {
+  border: 1px #bbb solid;
+}
+.flex{
+  display: flex;
+}
+.cell {
+  padding: 10rpx;
+  border-top: 1px #bbb solid;
+  min-height: 64rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.cell:first-child {
+  border-top: none;
+  background-color: #ddd;
+}
+
+/* .cell:nth-child(odd):not(:first-child) {
+  background-color: #eee;
+} */
+
+.column:not(:first-child) {
+  border-left: none;
+}

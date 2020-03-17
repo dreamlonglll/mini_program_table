@@ -1,0 +1,10 @@
+<scroll-view scroll-x="true" >
+  <view class="flex">
+    <block wx:for="{{head}}">
+      <view class="column" style="min-width:calc({{sizeList[index]+1}}em + 30rpx)">
+        <view class="cell">{{item.name}}</view>
+        <view class="cell" wx:for="{{body}}" wx:for-item="it">{{it[item.key]}}</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
